@@ -3,6 +3,7 @@ Fat <- read_excel("OneDrive - University of Missouri/Senior Fall/Data Analysis/F
 summary(model <- lm(BMI ~ Density + Age + 
                     Weight.lbs + Height.in + BodyFatSiri + FatFreeWeight + Neck + Chest + Abdomen + Hip + Thigh + Knee +
                     Ankle + Bicep + Forearm + Wrist, data = Fat))
+                    
 summary(model2 <- lm(BodyFatSiri ~ Density + Age + 
                       Weight.lbs + Height.in + BMI + FatFreeWeight + Neck + Chest + Abdomen + Hip + Thigh + Knee + 
                       Ankle + Bicep + Forearm + Wrist, data = Fat))
